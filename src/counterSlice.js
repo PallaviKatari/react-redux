@@ -1,3 +1,11 @@
+//reducer
+
+//npm install @reduxjs/toolkit
+
+//createSlice comes with the package redux-toolkit. 
+//It is a function that accepts an initial state, an object full of reducer 
+//functions, and a “slice name”, and automatically 
+//generates action creators and action types that correspond to the reducers and state.
 import { createSlice } from '@reduxjs/toolkit'
 
 export const counterSlice = createSlice({
@@ -16,6 +24,10 @@ export const counterSlice = createSlice({
     decrement: (state) => {
       state.value -= 1
     },
+    //action.payload
+    //A plain object describing the change that makes sense for your application. ...
+    // Actions must have a type field that indicates the type of action being performed. 
+    //Types can be defined as constants and imported from another module.
     incrementByAmount: (state, action) => {
       state.value += action.payload
     },
