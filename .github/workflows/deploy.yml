@@ -10,16 +10,16 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-   env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true   # opt into Node.js 24 now
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4   # upgrade from v3
+        uses: actions/checkout@v4   # latest version
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4 # upgrade from v3
+        uses: actions/setup-node@v4 # latest version
         with:
-          node-version: '20'        # or '20' if your project requires it
+          node-version: '20'        # or '18' if your project requires it
           cache: 'npm'
 
       - name: Install dependencies
