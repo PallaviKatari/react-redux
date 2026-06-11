@@ -2,7 +2,7 @@ name: React CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [ master ]   # since you only have master
   pull_request:
     branches: [ master ]
   workflow_dispatch:
@@ -13,12 +13,12 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4   # upgrade from v3
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v4 # upgrade from v3
         with:
-          node-version: '18'
+          node-version: '20'        # or '20' if your project requires it
           cache: 'npm'
 
       - name: Install dependencies
