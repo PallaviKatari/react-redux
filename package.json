@@ -2,7 +2,6 @@
   "name": "react-redux",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://pallavikatari.github.io/react-redux",
   "dependencies": {
     "@mdi/js": "^6.7.96",
     "@mdi/react": "^1.6.0",
