@@ -30,10 +30,13 @@ test('shows list of 2 posts when API succeeds', async () => {
   // ✅ wait for the list items to appear
   await waitFor(() => {
     const listElement = screen.getByTestId('data');
+    // eslint-disable-next-line testing-library/no-node-access
     expect(listElement.children.length).toBe(2);
+    // eslint-disable-next-line testing-library/no-wait-for-multiple-assertions
     expect(listElement).toHaveTextContent(
       'sunt aut facere repellat provident occaecati excepturi optio reprehenderit'
     );
+    // eslint-disable-next-line testing-library/no-wait-for-multiple-assertions
     expect(listElement).toHaveTextContent('qui est esse');
   });
 });
