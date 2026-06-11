@@ -18,6 +18,7 @@ export function Counter() {
 
   return (
     <div>
+      <h1>CI/CD DEMO USING GITHUB ACTIONS/PAGES AND VERCEL</h1>
       <div className={styles.row}>
         <button
           className={styles.button}
