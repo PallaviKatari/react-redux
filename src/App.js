@@ -7,6 +7,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h1>Workflow Test</h1>
         <img src={logo} className="App-logo" alt="logo" />
         <Counter />
       </header>
